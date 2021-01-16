@@ -1,0 +1,133 @@
+/*      Some basics resets      */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*      Typography      */
+body {
+  font-size: 16px;
+  font-family: "Karla", serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+
+h2 {
+  font-size: 44px;
+  text-align: center;
+  line-height: 1;
+}
+
+p {
+  line-height: 1.5;
+  text-align: center;
+  word-spacing: 1px;
+}
+
+/*      Some variables      */
+/*      Some mixings      */
+.button {
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.button--primary {
+  border: 2px solid #fafafa;
+  color: #fafafa;
+}
+
+.button--secondary {
+  border: 2px solid #000;
+  color: #000;
+}
+
+.header {
+  padding: 1rem 0;
+}
+
+.header div {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+.hero-section {
+  background: url("../images/image-intro-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 70vh;
+}
+
+.info-section {
+  background: url("../images/bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: #2d2640;
+  color: #fafafa;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-section div {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-section div > * {
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

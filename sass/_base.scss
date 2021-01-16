@@ -1,0 +1,80 @@
+/*      Some basics resets      */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*      Typography      */
+//  Body
+body {
+  font-size: 16px;
+  font-family: "Karla", serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+
+h2 {
+  font-size: 44px;
+  text-align: center;
+  line-height: 1;
+}
+
+p {
+  line-height: 1.5;
+  text-align: center;
+  word-spacing: 1px;
+}
+
+/*      Some variables      */
+//    Colors
+
+//  Primary
+
+$darkViolet: hsl(256, 26%, 20%);
+$grayishBlue: hsl(216, 30%, 68%);
+$black: #000;
+//  Neutral
+
+$veryDarkViolet: hsl(270, 9%, 17%);
+$darkGrayishViolet: hsl(273, 4%, 51%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+/*      Some mixings      */
+@mixin container($width, $mt: 0) {
+  width: $width;
+  margin: $mt auto;
+}
+
+@mixin flex() {
+  display: flex;
+}
+
+@mixin flexAlignCenter {
+  @include flex();
+  align-items: center;
+}
+
+@mixin flexJustifySpaceBetween {
+  @include flexAlignCenter();
+  justify-content: space-between;
+}
+
+@mixin flexFullCenter($direction: row) {
+  @include flex();
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}

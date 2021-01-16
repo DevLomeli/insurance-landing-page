@@ -1,0 +1,15 @@
+.button {
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &--primary {
+    border: 2px solid $veryLightGray;
+    color: $veryLightGray;
+  }
+
+  &--secondary {
+    border: 2px solid $black;
+    color: $black;
+  }
+}

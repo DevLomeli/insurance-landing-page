@@ -1,0 +1,40 @@
+.header {
+  padding: 1rem 0;
+
+  div {
+    @include container(90%);
+    @include flexJustifySpaceBetween();
+  }
+
+  &__nav {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.hero-section {
+  background: url("../images/image-intro-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 70vh;
+}
+
+.info-section {
+  background: url("../images/bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: $darkViolet;
+  color: $veryLightGray;
+  height: 70vh;
+  @include flexFullCenter();
+
+  div {
+    @include container(90%);
+    @include flexFullCenter(column);
+
+    & > * {
+      margin-bottom: 2rem;
+    }
+  }
+}
