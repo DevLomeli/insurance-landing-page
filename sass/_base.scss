@@ -47,6 +47,10 @@ nav p {
   text-transform: uppercase;
 }
 
+nav li {
+  list-style: none;
+}
+
 /*      Some variables      */
 //    Colors
 
@@ -80,6 +84,11 @@ $veryLightGray: hsl(0, 0%, 98%);
   @include flexAlignCenter();
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin flexJustifyCenter {
+  display: flex;
+  justify-content: center;
 }
 
 @mixin flexFullCenter($direction: row) {
