@@ -32,6 +32,10 @@ h2 {
   line-height: 1;
 }
 
+h4 {
+  font-size: 24px;
+}
+
 p {
   line-height: 1.5;
   text-align: center;
@@ -70,6 +74,7 @@ $veryLightGray: hsl(0, 0%, 98%);
 @mixin flexJustifySpaceBetween {
   @include flexAlignCenter();
   justify-content: space-between;
+  align-items: center;
 }
 
 @mixin flexFullCenter($direction: row) {
@@ -77,4 +82,9 @@ $veryLightGray: hsl(0, 0%, 98%);
   flex-direction: $direction;
   justify-content: center;
   align-items: center;
+}
+
+/*    Some helper classes     */
+.border {
+  border: 3px solid black;
 }

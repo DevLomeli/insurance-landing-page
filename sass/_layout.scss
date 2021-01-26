@@ -1,10 +1,6 @@
 .header {
-  padding: 1rem 0;
-
-  div {
-    @include container(90%);
-    @include flexJustifySpaceBetween();
-  }
+  padding: 1rem;
+  @include flexJustifySpaceBetween();
 
   &__nav {
     @media screen and (max-width: 768px) {
@@ -17,6 +13,7 @@
   background: url("../images/image-intro-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   height: 70vh;
 }
 
@@ -24,6 +21,7 @@
   background: url("../images/bg-pattern-intro-left-mobile.svg");
   background-repeat: no-repeat;
   background-position: top left;
+
   background-color: $darkViolet;
   color: $veryLightGray;
   height: 70vh;
@@ -35,6 +33,41 @@
 
     & > * {
       margin-bottom: 2rem;
+    }
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.features-section {
+  div {
+    @include container(90%);
+    padding: 3rem 0;
+  }
+}
+
+.about-section {
+  div {
+    @include container(85%);
+    @include flexFullCenter(column);
+    padding: 3rem 0;
+    background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: $darkViolet;
+
+    h2 {
+      color: $veryLightGray;
+    }
+
+    & > * {
+      margin-bottom: 2rem;
+    }
+
+    & > *:last-child {
+      margin-bottom: 0;
     }
   }
 }
