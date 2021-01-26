@@ -15,6 +15,7 @@ body {
   font-size: 16px;
   font-family: "Karla", serif;
   font-weight: 400;
+  position: relative;
 }
 
 h1,
@@ -98,7 +99,73 @@ $veryLightGray: hsl(0, 0%, 98%);
   align-items: center;
 }
 
+@mixin paddingX($num) {
+  padding-left: $num;
+  padding-right: $num;
+}
+
+@mixin paddingY($num) {
+  padding-top: $num;
+  padding-bottom: $num;
+}
+
 /*    Some helper classes     */
 .border {
   border: 3px solid black;
+}
+
+.px--1 {
+  @include paddingX(1rem);
+}
+
+.px--2 {
+  @include paddingX(2rem);
+}
+
+.px--3 {
+  @include paddingX(3rem);
+}
+
+.py--1 {
+  @include paddingY(1rem);
+}
+
+.py--2 {
+  @include paddingY(2rem);
+}
+
+.py--3 {
+  @include paddingY(3rem);
+}
+
+.pl--1 {
+  padding-left: 1rem;
+}
+
+.pr--1 {
+  padding-right: 1rem;
+}
+
+.pt--1 {
+  padding-top: 1rem;
+}
+
+.pb--1 {
+  padding-bottom: 1rem;
+}
+
+.pl--2 {
+  padding-left: 2rem;
+}
+
+.pr--2 {
+  padding-right: 2rem;
+}
+
+.pt--2 {
+  padding-top: 2rem;
+}
+
+.pb--2 {
+  padding-bottom: 2rem;
 }
