@@ -42,6 +42,11 @@ p {
   word-spacing: 1px;
 }
 
+nav a,
+nav p {
+  text-transform: uppercase;
+}
+
 /*      Some variables      */
 /*      Some mixings      */
 /*    Some helper classes     */
@@ -212,6 +217,115 @@ p {
 }
 
 .about-section div > *:last-child {
+  margin-bottom: 0;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  background: url("../images/bg-pattern-footer-mobile.svg");
+  height: 200px;
+}
+
+.footer__socialMedia > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  width: 200px;
+}
+
+.footer__socialMedia a {
+  margin-bottom: 1rem;
+}
+
+.footer hr {
+  height: 1px;
+  width: 70%;
+  border: none;
+  background-color: #e1e1e1;
+}
+
+.footer__nav {
+  padding: 3rem 0;
+}
+
+.footer__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.footer__nav ul p {
+  color: #837d87;
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.footer__nav ul li {
+  margin-bottom: 1rem;
+}
+
+.footer__nav ul li:last-child {
+  margin-bottom: 0;
+}
+
+.footer__nav ul a {
+  color: #000;
+}
+
+.footer__nav > * {
+  margin-bottom: 2rem;
+}
+
+.footer__nav > *:last-child {
   margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */

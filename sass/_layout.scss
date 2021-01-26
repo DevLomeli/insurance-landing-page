@@ -71,3 +71,65 @@
     }
   }
 }
+
+.footer {
+  @include flexFullCenter(column);
+
+  &__socialMedia {
+    @include flexFullCenter(column);
+    align-self: stretch;
+    background: url("../images/bg-pattern-footer-mobile.svg");
+    height: 200px;
+
+    & > div {
+      @include flexJustifySpaceBetween;
+      padding: 0.5rem 0;
+      width: 200px;
+    }
+
+    a {
+      margin-bottom: 1rem;
+    }
+  }
+
+  hr {
+    height: 1px;
+    width: 70%;
+    border: none;
+    background-color: #e1e1e1;
+  }
+  &__nav {
+    padding: 3rem 0;
+
+    ul {
+      @include flexFullCenter(column);
+      list-style: none;
+
+      p {
+        color: $darkGrayishViolet;
+        font-size: 18px;
+        margin-bottom: 2rem;
+      }
+
+      li {
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      a {
+        color: $black;
+      }
+    }
+
+    & > * {
+      margin-bottom: 2rem;
+    }
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
