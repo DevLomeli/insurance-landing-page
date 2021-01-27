@@ -5,12 +5,12 @@ var toggle = false;
 hamburguerIcon.addEventListener("click", () => {
   if (!toggle) {
     toggle = true;
-    hamburguerIcon.src = "../images/icon-close.svg";
+    hamburguerIcon.src = "./images/icon-close.svg";
     navMenuMobile.classList.add("mobileMenu--show");
     body.style.position = "fixed";
   } else {
     toggle = false;
-    hamburguerIcon.src = "../images/icon-hamburger.svg";
+    hamburguerIcon.src = "./images/icon-hamburger.svg";
     navMenuMobile.classList.remove("mobileMenu--show");
     body.style.removeProperty("position");
   }
