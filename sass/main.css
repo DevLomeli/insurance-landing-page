@@ -12,7 +12,7 @@ a {
 
 /*      Typography      */
 body {
-  font-size: 16px;
+  font-size: 2.5vh;
   font-family: "Karla", serif;
   font-weight: 400;
   position: relative;
@@ -28,13 +28,13 @@ h6 {
 }
 
 h2 {
-  font-size: 44px;
+  font-size: 5.5vh;
   text-align: center;
   line-height: 1;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 3.5vh;
 }
 
 p {
@@ -219,15 +219,22 @@ nav li {
   visibility: hidden;
 }
 
-.mobileMenu li {
+.mobileMenu ul {
+  width: 90%;
+  margin: 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.mobileMenu ul li {
   margin-bottom: 2.5rem;
   text-align: center;
 }
 
-.mobileMenu a {
+.mobileMenu ul a {
   color: #fafafa;
   font-size: 3vh;
-  padding: 0.5rem 5rem;
 }
 
 .mobileMenu--show {
@@ -304,7 +311,7 @@ nav li {
 }
 
 .about-section div {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,7 +326,7 @@ nav li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
   background-repeat: no-repeat;
   background-position: top right;
@@ -391,6 +398,7 @@ nav li {
 
 .footer__socialMedia a {
   margin-bottom: 1rem;
+  font-size: 2.5vh;
 }
 
 .footer hr {
@@ -422,7 +430,6 @@ nav li {
 
 .footer__nav ul p {
   color: #837d87;
-  font-size: 18px;
   margin-bottom: 2rem;
 }
 
