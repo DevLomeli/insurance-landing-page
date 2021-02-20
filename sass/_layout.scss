@@ -33,6 +33,10 @@
       }
     }
   }
+
+  @media screen and (min-width: 769px) {
+    @include container(90%);
+  }
 }
 
 .mobileMenu {
@@ -85,6 +89,10 @@
   background-position: center center;
   background-size: cover;
   height: 70vh;
+
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 }
 
 .info-section {
@@ -101,12 +109,46 @@
     @include container(90%);
     @include flexFullCenter(column);
 
-    & > * {
-      margin-bottom: 2rem;
+    article:first-of-type {
+      @include flexFullCenter(column);
+
+      > * {
+        margin-bottom: 2rem;
+      }
+
+      > *:last-child {
+        margin-bottom: 0;
+      }
     }
 
-    & > *:last-child {
-      margin-bottom: 0;
+    article:last-of-type {
+      display: none;
+    }
+
+    @media screen and (min-width: 769px) {
+      flex-direction: row;
+      align-items: stretch;
+
+      article:first-of-type {
+        flex: 0.5;
+        @include flexColumn(center, flex-start);
+
+        h2,
+        p {
+          text-align: left;
+        }
+      }
+      article:last-of-type {
+        @include flexJustifyCenter;
+        position: relative;
+        flex: 0.5;
+
+        img {
+          position: absolute;
+          width: 50vh;
+          height: 70vh;
+        }
+      }
     }
   }
 }
@@ -117,13 +159,15 @@
     padding: 3rem 0;
 
     @media screen and (min-width: 769px) {
+      padding-top: 10rem;
+
       h2 {
         text-align: justify;
       }
       .card-wrapper {
         @include flexRowCenter(space-between, flex-start);
         width: 100%;
-
+        padding-top: 2rem;
         .card {
           justify-content: space-between;
           align-items: flex-start;

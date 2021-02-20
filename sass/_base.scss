@@ -88,6 +88,13 @@ $veryLightGray: hsl(0, 0%, 98%);
   justify-content: $just-content;
 }
 
+@mixin flexColumn($just-content, $align-items) {
+  @include flex();
+  flex-direction: column;
+  align-items: $align-items;
+  justify-content: $just-content;
+}
+
 @mixin flexJustifySpaceBetween {
   @include flexAlignCenter();
   justify-content: space-between;
