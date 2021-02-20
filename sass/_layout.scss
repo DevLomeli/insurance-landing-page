@@ -140,6 +140,28 @@
       margin-bottom: 1rem;
       font-size: 2.5vh;
     }
+
+    @media screen and (min-width: 769px) {
+      & {
+        @include container(90%);
+        padding: 0 0.5rem;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+
+      & .footer__logo {
+        margin-bottom: 0.5rem;
+      }
+
+      & > div svg {
+        cursor: pointer;
+
+        &:hover path {
+          fill: #000;
+        }
+      }
+    }
   }
 
   hr {
@@ -178,6 +200,29 @@
 
     & > *:last-child {
       margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 769px) {
+      & {
+        @include container(90%);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        align-items: flex-start;
+        ul p {
+          width: 100%;
+          text-align: left;
+        }
+
+        ul li {
+          width: 100%;
+          text-align: left;
+        }
+
+        ul li a:hover {
+          border-bottom: 1px solid black;
+        }
+      }
     }
   }
 }
