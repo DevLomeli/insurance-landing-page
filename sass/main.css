@@ -345,6 +345,27 @@ nav li {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 769px) {
+  .about-section div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about-section div > h2 {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
