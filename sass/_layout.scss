@@ -94,6 +94,25 @@
   div {
     @include container(90%);
     padding: 3rem 0;
+
+    @media screen and (min-width: 769px) {
+      h2 {
+        text-align: justify;
+      }
+      .card-wrapper {
+        @include flexRowCenter(space-between, flex-start);
+        width: 100%;
+
+        .card {
+          justify-content: space-between;
+          align-items: flex-start;
+
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
   }
 }
 

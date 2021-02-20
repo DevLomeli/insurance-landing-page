@@ -310,6 +310,39 @@ nav li {
   padding: 3rem 0;
 }
 
+@media screen and (min-width: 769px) {
+  .features-section div h2 {
+    text-align: justify;
+  }
+  .features-section div .card-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .features-section div .card-wrapper .card {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .features-section div .card-wrapper .card p {
+    text-align: left;
+  }
+}
+
 .about-section div {
   width: 90%;
   margin: 0 auto;
