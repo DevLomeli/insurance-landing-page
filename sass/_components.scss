@@ -6,11 +6,21 @@
   &--primary {
     border: 2px solid $veryLightGray;
     color: $veryLightGray;
+
+    &:hover {
+      background: $veryLightGray;
+      color: $black;
+    }
   }
 
   &--secondary {
     border: 2px solid $black;
     color: $black;
+
+    &:hover {
+      color: $veryLightGray;
+      background-color: $black;
+    }
   }
 }
 

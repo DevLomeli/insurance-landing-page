@@ -132,9 +132,19 @@ nav li {
   color: #fafafa;
 }
 
+.button--primary:hover {
+  background: #fafafa;
+  color: #000;
+}
+
 .button--secondary {
   border: 2px solid #000;
   color: #000;
+}
+
+.button--secondary:hover {
+  color: #fafafa;
+  background-color: #000;
 }
 
 .card {
@@ -183,6 +193,37 @@ nav li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   align-items: center;
+}
+
+.header nav {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .header nav {
+    display: block;
+    width: 60%;
+  }
+  .header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .header nav ul li a {
+    color: #000;
+  }
+  .header nav ul li a:hover {
+    border-bottom: 1px solid #000;
+  }
 }
 
 .header__hamburguerIcon {
